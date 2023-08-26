@@ -1,27 +1,25 @@
 export const menuArray = [
   {
       name: "Long sleeve shirt",
-      ingredients: ["pepperoni", "mushrom", "mozarella"],
+      material: ["90% cotton", "10% polyester"],
       id: 0,
       price: 14,
-      emoji: "🍕",
       image:`img/sweater.png`
   },
   {
-      name: "Hamburger",
-      ingredients: ["beef", "cheese", "lettuce"],
+      name: "Denin Shorts",
+      material: ["98% cotton", "2% elastane"],
       price: 12,
-      emoji: "🍔",
       id: 1,
       image:"./img/denin-shorts.png",
   },
       {
-      name: "Beer",
-      ingredients: ["grain, hops, yeast, water"],
+      name: "Midi skirt",
+      material: ["100% cotton"],
       price: 12,
-      emoji: "🍺",
       id: 2,
       image:`img/skirt.png`
       
   }
 ]
+
