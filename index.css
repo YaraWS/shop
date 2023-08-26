@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #080808;
+}
+
+
+
+/* .container{
+  background-color: #FFF9E8;
+} */
+
+header{
+  width:350px;
+  height:170px;
+  background-image:url("./img/Vintage-Shop.png");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  color: white;
+  left: 0px;
+  top: 0px;
+}
+
+
+.phone{
+  /* width: 600px; */
+  min-height: 1161px;
+  background-color: #FFF9E8;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  /* border: 4px solid #a80dad; */
+}
+
+.item hr {
+  width: 70%;
+  margin-top: 20px;
+  background-color: #e3b97a;
+}
+
+.image{
+  /* font-size: 60px;
+  text-align:centr;
+  width: 70px;
+  height: 89px; */
+}
+
+.cloths-item{
+  width: 280px;
+  height: 250px; 
+  border-radius: 20px;
+}
+
+
+.description{
+  /* position: absolute;
+  left: 10px; */
+  /* margin-left: 170px;
+  margin-right: 0px;
+  padding-right: 0px; */
+  /* border: 2px solid blue; */
+}
+
+.description button{
+  background-color: #CA8F4D;
+  color: #FBFBFB;
+  border: none;
+  border-radius:20px;
+  padding: 5px 10px;
+  box-shadow:1px 3px 10px 1px #543d2373;
+}
+
+.description h2{
+  font-size: 22px;
+  /* line-height: 16.8px; */
+  color: #6b635f;
+}
+
+.ingredients{
+  width: 300px;
+  font-family: Smythe;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8B8B8B;
+}
+
+.price{
+  font-family: 'Smythe', cursive;
+  font-size:18px;
+  color: #555050;
+  /* border: 2px solid turquoise; */
+}
+
+.price-button{
+  display: flex;
+  /* border: 2px solid rgb(190, 29, 55); */
+  align-items:center;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.add-btn{
+  font-size: 30px;
+  border: #3c2b58;
+  color:#655284;
+}
+
+.order{
+  margin: 45px 0px;
+  width: 300px;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.order-btn{
+width: 150px;
+height: 40px;
+align-self: center;
+background: #9FBA92;
+color: white;
+font-size: 15px;
+box-shadow: 0px 1px 2px #0000000d;
+border-radius: 10px;
+border: none;
+}
+
+.order-title{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: #4B3E3E;
+  margin-bottom: 30px;
+}
+
+.order-top{
+  color: #4B3E3E;
+  font-size: 20px;
+}
+
+hr{
+  border: none;
+  height: 2px;
+  background-color: #cbb28d; 
+}
+
+/* Final Order */
+
+.remove-btn{
+  background-color: transparent;
+  font-size: 10px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+
+.order-botton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.order-botton h1{
+  font-size: 16px;
+  color: #4B3E3E;
+}
+
+.display{
+  display:none;
+  /* background-color: blue; */
+}
+
+.product-details{
+  margin-bottom: 10px;
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content:space-between;
+  align-items: start;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 380px;
+  height: 420px;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 10px 20px 90px 20px #a3a1a1;
+}
+
+.modal h1{
+  font-size: 24px;
+
+  text-align: center;
+  /* padding: 40px; */
+}
+
+
+.modal input {
+  color:#757575;
+  font-size:20px;
+  width: 320px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0px 24px 23px 24px;
+  border: 2px solid #757575;
+}
+
+input, value {
+  color: green;
+}
+
+.pay-container{
+  display: flex;
+  justify-content: center;
+}
+
+.modal button{
+  background-color: #16DB99;
+  color: #ffffff;
+  width: 260px;
+  height: 51px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 24px;
+  margin-bottom: 40px;
+}
+
+form input[type = "submit"]{
+  color: purple;
+  background-color: blue;
+}
+
+
+.customer-message{
+  background-color: #d7e9cf;
+  color:#2c3e24;
+  width: 304px;
+  height: 60px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.customer-message span{
+  font-weight: bolder;
+  color: #8d4d04;
+}
+
+
