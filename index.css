@@ -88,22 +88,28 @@ header{
   border: none;
   border-radius:20px;
   padding: 5px 10px;
+  margin-bottom: 5px;
   box-shadow:1px 3px 10px 1px #543d2373;
+  cursor: pointer;
 }
 
 .description h2{
   font-size: 22px;
-  /* line-height: 16.8px; */
   color: #6b635f;
+}
+
+.composition{
+  display: none;
+  font-size: 12px;
+  color: #4b3e3ec1;
+  margin-top: 2px;
+  margin-left: 5px;
 }
 
 .ingredients{
   width: 300px;
-  font-family: Smythe;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #8B8B8B;
 }
@@ -128,6 +134,7 @@ header{
   font-size: 30px;
   border: #3c2b58;
   color:#655284;
+  cursor: pointer;
 }
 
 .order{
