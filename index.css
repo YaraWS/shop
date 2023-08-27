@@ -216,6 +216,8 @@ hr{
   align-items: start;
 }
 
+/* Modal */
+
 .modal{
   display: none;
   position: fixed;
@@ -234,9 +236,9 @@ hr{
 
 .modal h1{
   font-size: 24px;
-
   text-align: center;
-  /* padding: 40px; */
+  margin: 20px;
+  color: #413838;
 }
 
 
@@ -250,8 +252,16 @@ hr{
   border: 2px solid #757575;
 }
 
+.iconx{
+ position:absolute;
+ right: 5px;
+ font-size: 25px;
+ margin-top: 3px;
+ cursor: pointer;
+}
+
 input, value {
-  color: green;
+  padding-left: 10px;
 }
 
 .pay-container{
@@ -270,6 +280,7 @@ input, value {
   border-radius: 5px;
   margin: 24px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 form input[type = "submit"]{
@@ -282,7 +293,7 @@ form input[type = "submit"]{
   background-color: #d7e9cf;
   color:#2c3e24;
   width: 304px;
-  height: 60px;
+  height: 80px;
   border-radius: 20px;
   padding: 15px;
 }
