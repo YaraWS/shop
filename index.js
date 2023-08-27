@@ -1,7 +1,8 @@
-import {menuArray} from '/data.js'
+import {clothesArray} from '/data.js'
 
 let order = document.getElementById("order")
 let cart = []
+
 const form = document.getElementById("myForm")
 const nameRegex = /^[A-Za-z\s]+$/;
 const cardRegex = /^\d{16}$/;
@@ -16,13 +17,19 @@ document.addEventListener('click',function(e){
        console.log(e.target.dataset.btn)
       addItemOnCart(e.target.dataset.btn)
 
-   }if(e.target.dataset.remove){
+   }else if(e.target.dataset.remove){
 
       removeItemFromCart(e.target.dataset.remove)   
-   }if(e.target.dataset.complete){
-      document.getElementById("modal").style.display = "block"}
+   }else if(e.target.dataset.complete){
+      document.getElementById("modal").style.display = "block"
+   } else if (e.target.classList.contains("composition-btn")) {
+      toggleComposition(e.target);
+   }
   
 })
+
+
+
 
 form.addEventListener('submit',function(e){
    e.preventDefault();
@@ -52,7 +59,7 @@ form.addEventListener('submit',function(e){
 
 //The paramether targetIdItem just brings the id of the item I selected. I need the function findItemOnMenu to know actually the content of that item.
 function addItemOnCart(targetIdItem){
-   const targetItem = findItemOnMenu(targetIdItem)
+   const targetItem = findItemClothes(targetIdItem)
    
    cart.push(targetItem)
    renderCart(cart)
@@ -70,9 +77,10 @@ function removeItemFromCart(removedIdItem){
 
 
 //**This function will select the whole object that matched the id and returned. I chose not to storage it inside a variable. There are other ways to do this comparisson, here I'm using an arrow function.menuItem is a random name, it represents an item inside the Array MenuArray.
-function findItemOnMenu(itemId){
+// function findItemOnMenu(itemId){
+function findItemClothes(itemId){
 
-   return menuArray.find(menuItem => menuItem.id == itemId)
+   return clothesArray.find(clothesItem => clothesItem.id == itemId)
 
 }
 
@@ -155,20 +163,23 @@ function renderFinalOrder(html){
 function getDataHtml(){
    let renderData=""
 
-   menuArray.forEach(function(dish){
+   clothesArray.forEach(function(item){
       renderData +=`
       <div class="item">
          <div class="image">
-          <img src="${dish.image}" class="cloths-item">
+          <img src="${item.image}" class="cloths-item">
          </div>
 
          <div class="description">
-            <h2>${dish.name}</h2>
-            <button>composition</button>
+            <h2>${item.name}</h2>
+            <button  class="composition-btn" id="composition-btn-${item.id}">composition</button>
+            <div class="composition composition-${item.id}">${item.brand} ${item.size}<br>
+             ${item.material}
+            </div>
             
             <div class="price-button">
-             <div class="price">$ ${dish.price}</div>
-             <i class="add-btn fa-solid fa-circle-plus" data-btn ="${dish.id}"></i>
+             <div class="price">$ ${item.price}</div>
+             <i class="add-btn fa-solid fa-circle-plus" data-btn ="${item.id}"></i>
             </div> 
          </div>
 
@@ -221,7 +232,7 @@ function removeCalculatePrice(removedItem){
 }
 
 function customerMessage(fname){
-   order.innerHTML = `<div class="customer-message">Thanks <span>${fname}</span> ! Your order is on its way !</div>`
+   order.innerHTML = `<div class="customer-message">Thanks <span>${fname}</span>! Your order is on its way!</div>`
    
 }
 
@@ -238,5 +249,24 @@ function validateCVV(){
    return cvvRegex.test(fcvv.value.trim())
 }
 
+// Composition Toggle
 
+function toggleComposition(button){
+   const itemId = button.id.split("-")[2];
+   const compositionElement = document.querySelector(`.composition-${itemId}`);
+   if (compositionElement.style.display === "block"){
+      compositionElement.style.display = "none";
+   } else {
+      compositionElement.style.display = "block"
+   }
+
+   console.log("composition clicked")
+
+}
+
+
+
+// compositionBtn.addEventListener('click',function(e){
+   
+// })
 
