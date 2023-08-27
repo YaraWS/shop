@@ -24,6 +24,8 @@ document.addEventListener('click',function(e){
       document.getElementById("modal").style.display = "block"
    } else if (e.target.classList.contains("composition-btn")) {
       toggleComposition(e.target);
+   } else if (e.target.classList.contains("iconx")) {
+      document.getElementById("modal").style.display = "none"
    }
   
 })
