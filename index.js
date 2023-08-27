@@ -104,7 +104,7 @@ function renderCart(cart){
 
          <div class="order-botton">
             <h1>Total Price</h1>
-            ${sumPrices}
+            <h2>${sumPrices}</h2>
          </div> 
 
          <div class="btn">
@@ -141,8 +141,7 @@ function getHtmlFromCart(cart){
    let html = ""
   
   cart.forEach(function(product){
-     html +=`
-     <div class="product-details">
+     html +=`<div class="product-details">
         <div class="wrap-button">
            ${product.name} 
            <button class="remove-btn" id="remove-btn" data-remove ="${product.id}">(remove)</button>
@@ -185,10 +184,9 @@ function getDataHtml(){
             </div> 
          </div>
 
-         <hr>
-        
          
-      </div>`
+      </div>
+      <hr class="division-line">`
    })
    
    return renderData
