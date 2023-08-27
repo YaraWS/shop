@@ -6,13 +6,12 @@
 }
 body{
   background-color: #080808;
+  margin:auto;
 }
 
 
 
-/* .container{
-  background-color: #FFF9E8;
-} */
+
 
 header{
   width:350px;
@@ -37,12 +36,7 @@ header{
   align-items: center;
 }
 
-/* .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
+
 
 .item{
   display: flex;
