@@ -90,7 +90,7 @@ header{
   border: none;
   border-radius:20px;
   padding: 5px 10px;
-  margin-bottom: 5px;
+  margin: 5px;
   box-shadow:1px 3px 10px 1px #543d2373;
   cursor: pointer;
 }
@@ -137,6 +137,12 @@ header{
   border: #3c2b58;
   color:#655284;
   cursor: pointer;
+}
+
+.add-btn:hover {
+ font-size: 32px;
+ color:#654e8a;
+
 }
 
 .order{
