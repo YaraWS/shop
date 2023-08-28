@@ -2,82 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="queries.css">
-  <title>Second hand Shop</title>
+  <link href="index.css" rel="stylesheet">
+  <link href="queries.css" rel="stylesheet">
+  <title>Yara Soler</title>
 </head>
 <body>
-
-
-<div class="phone">
   <header>
+
+    <div class="hero">
+      <nav class="navbar">
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" >Get in touch</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+      </nav>
+    </div>
     
   </header>
 
 
-  
+  <main>
 
-  <div class="container" id="container">
-
-    <!-- boilerplate of the items on sale -->
-
-  </div>
-   
-  <div class="botton-container" id="botton-container">
-      <div class="order" id="order">
-        <div class="order-top">
-
-        <!-- html boilerplate -->
+    <section class="about-me" >
+      <h3 id="about-me">About Me</h3>
+      <h1 class="tittles">Front End Developer</h1>
+      <img class="photo" src="img/yaraphoto.jpg" alt="Yara's profile photo">
+      <h2>Yara Soler</h2>
+      <div class="about-me-text">
+         <p>I'm <span>Yara</span>, a friendly and dedicated front-end developer based in London. With a passion for creativity and a strong work ethic, I strive to bring ideas to life by crafting engaging and user-friendly websites.</p>
+         
+         <p>I'm familiar with <span class="tech-tags">HTML</span>,<span>CSS</span> , and <span>JavaScript</span> – these are like my online superpowers for creating cool stuff. I love using tools such as <span>VSCode</span>,<span>GitHub</span>, and <span>Figma</span> to bring my ideas to life and work with others. Right now, I'm in the process of getting to know <span>TypeScript</span> ,<span>Jest</span>, and <span>React</span> – they're my latest exciting learning adventures.</p>
 
       </div>
-    
-    </div>  
 
-    <div class="modal" id="modal">
-        <i class="fa-solid fa-circle-xmark iconx"></i>
-        <h1>Enter card details</h1>
-        <form  id="myForm" name="myForm" action="/index.js">
-          
-          <input type="text"
-          id="fname" 
-          name="fname" 
-          placeholder="Enter your name"
-          required>
+    </section>
 
-          <input type="text"
-          id="fcard"
-          name="fcard"
-          placeholder="Enter card number" 
-          class="value" 
-          required> 
-
-          <input type="text"
-          id="fcvv"
-          name="fcvv"
-          placeholder="Enter CVV" 
-          required>
-          <div class="pay-container">
-            <button data-pay="pay" type="submit" value="submit">Pay</button>
+    <section class="projects"  id="projects">
+      <h3>Projects</h3>
+      <h1 class="tittles">Projects</h1>
+      <div class="project">
+        <img src="/img/shop.gif" alt="Project animated gif" class="project-gif">
+        <div class="project-text">
+          <h1 class="tindog tittles">Tindog</h1>
+          <div class="tindog-text">
+          Web app for dogs to find real love. The user can engage by liking or disliking a dog
+          by clicking the button. The app used JavaScript classes for organization, setTimeout for the badges and some simple CSS.  
           </div>
-        </form>
 
-        
-        
+          <h2 class="features tittles">Future Features</h2>
+          <p>A summary of all liked profiles listed on the screen.</p>
+
+          <div class="tags">
+            <div class="tech-tags">JavaScript</div>
+            <div class="tech-tags">CSS</div>
+            <div class="tech-tags">Figma</div>
+          </div>
+
+          <div class="buttons">
+            <a href="#" target="_blank"  class="button-links">See Live</a>
+            <a href="#" target="_blank" class="button-links">Code</a>
+          </div>
+           
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact">
+
+
       
+    <h1 class="tittles" id="contact">Contact me</h1>
+    <hr class="division">
+
+    <form action="" id="form" class="">
+      <p class="email">yarawsoler@gmail.com</p>
+      <input type="text" id="fname" name="fname" placeholder="Neo" class="form-input" required><br>
+      <input type="text" id="femail" name="femail" placeholder=" simulacrum@matrix.com" class="form-input" required><br>
+      <textarea class="form-input message" rows="4" cols="50" name="fmessage" placeholder="Your message here..." form="form" required></textarea>
+      <button type="submit" value="submit" class="submit-btn">Submit</button>
+    </form>
+    <br>
+  </section>
+    <div class="social">
+      <a href="#" target="_blank"><i class="fa-brands fa-linkedin social-links"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-github social-links"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-twitter social-links"></i></a>
     </div>
+  <section>
 
-</div>
+  </section>
+  </main>
 
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<script src="index.js" type="module"></script>  
+  <script src="index.js"></script>
 </body>
 </html>
-
-
-
