@@ -1,290 +1,84 @@
-/* =================
-    Media queries 
-   ================= */
-
-   @media (min-width:800px) {
-    /* Header */
-    header{
-      width:455px;
-      height:221px;
-    }
-    
-    /* Clothes Item */
-    .cloths-item {
-      width: 560px;
-      height: 500px;
-    }
-    
-    .description h2{
-      font-size: 40px;
-      margin: 10px 0px;
-    }
-
-    .description button{
-      padding: 10px 24px;
-      margin: 10px;
-      font-size: 20px;
-    }
-
-    .composition{
-      font-size: 16px;
-      margin-top: 5px;
-      margin-left: 14px;
-    }
-
-    .price{
-      font-size:24px;
-      margin-left: 16px;
-    }
-
-    .add-btn{
-      font-size: 50px;
-    }
-
-    .add-btn:hover {
-      font-size: 55px;
-     }
-
-    /* Total Order */
-    .order{
-      margin: 45px 0px;
-      width: 420px;
-    }
-
-    .order-title{
-      font-size: 40px;
-      margin-bottom: 30px;
-    }
-
-    .order-top{
-      font-size: 30px;
-    }
-
-    .remove-btn{
-      font-size: 17px;
-    }
-
-    .order-botton h1{
-      font-size: 24px;
-    }
-
-    .order-botton h2{
-      font-size: 24px;
-    }
-
-    .order-btn{
-      width: 195px;
-      height: 52px;
-      font-size: 20px;
-      margin-top: 20px;
-    }
-
-    /* Modal */
-    .modal{
-      width: 594px;
-      height: 476px;
-    }
-
-    .modal h1{
-      font-size: 30px;
-    }
-
-    .modal input {
-      font-size:20px;
-      width: 540px;
-      height: 70px;
-    }
-
-    .iconx{
-      right: 1px;
-      font-size: 45px;
-     }
-
-     .modal button{
-      width: 338px;
-      height: 66px;
-      font-size: 28px;
-      margin: 24px;
-      margin-bottom: 40px;
-    }
-
-    /*Customer Message */
-
-    .customer-message{
-      width: 395px;
-      height: 104px;
-      padding: 20px;
-      font-size: 20px;
-    }
-
-
-   }
-
-
-
-   @media (min-width:1080px){
-     body{
-      background-color: #a89fb7;
-     }  
-
-     .phone{
-      width: 90%;
-      border-radius: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      border: 8px solid #453a3a;
-     }
-    
-    /* Header */
-      header{
-        width:455px;
-        height:221px;
-      }
-      
-      /* Clothes Item */
-      .item{
-        /* border: 3px solid green; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 900px;
-        margin-bottom: 70px;
-      }
-      .cloths-item {
-        width: 280px;
-        height: 250px;
-      }
-
-      .description{
-        /* border: 2px solid red; */
-        min-width: 400px;
-        /* margin-left: 100px; */
-      }
-      
-      .description h2{
-        font-size: 40px;
-        margin: 10px 0px;
-      }
+/* ====================
+   Media Queries
+   ==================== */
+@media(min-width:768px){
   
-      .description button{
-        padding: 10px 24px;
-        margin: 10px;
-        font-size: 20px;
-      }
-  
-      .composition{
-        font-size: 16px;
-        margin-top: 5px;
-        margin-left: 14px;
-      }
-  
-      .price{
-        font-size:24px;
-        margin-left: 16px;
-      }
-  
-      .add-btn{
-        font-size: 50px;
-      }
-  
-      .add-btn:hover {
-        font-size: 55px;
-       }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
 
-       .division-line {
-        width: 95%;
-        margin-bottom: 100px;
-      }
-  
-      /* Total Order */
-      .order{
-        margin: 45px 0px;
-        width: 420px;
-      }
-  
-      .order-title{
-        font-size: 40px;
-        margin-bottom: 30px;
-      }
-  
-      .order-top{
-        font-size: 30px;
-      }
-  
-      .remove-btn{
-        font-size: 17px;
-      }
-  
-      .order-botton h1{
-        font-size: 24px;
-      }
-  
-      .order-botton h2{
-        font-size: 24px;
-      }
-  
-      .order-btn{
-        width: 195px;
-        height: 52px;
-        font-size: 20px;
-        margin-top: 20px;
-      }
-  
-      /* Modal */
-      .modal{
-        width: 594px;
-        height: 476px;
-      }
-  
-      .modal h1{
-        font-size: 30px;
-      }
-  
-      .modal input {
-        font-size:20px;
-        width: 540px;
-        height: 70px;
-      }
-  
-      .iconx{
-        right: 1px;
-        font-size: 45px;
-       }
-  
-       .modal button{
-        width: 338px;
-        height: 66px;
-        font-size: 28px;
-        margin: 24px;
-        margin-bottom: 40px;
-      }
-  
-      /*Customer Message */
-  
-      .customer-message{
-        width: 395px;
-        height: 104px;
-        padding: 20px;
-        font-size: 20px;
-      }
-     
+  a{
+    font-size: 16px;
+  }
+
+  .nav-menu{
+    position: fixed;
+    top: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    background: #b0bbaf;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 28px;
+  }
+
+  .hero{
+    background: #929E90 url("/img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-me-text{
+    max-width: 30em;
+  }
+
+  .project-gif{
+    max-width: 45em;
+  }
+
+  .tindog-text{
+    max-width: 30em;
+  }
+
+  form{
+    max-width: 150%;
+    margin: 20px auto;
+  }
+
+
+}
+
+
+
  
-    
+  
 
-   }
 
-   @media (min-width: 3839px) {
 
-    .phone{
-      width: 40%;
-      height: 100vh;
-      border-radius: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      border: 8px solid #453a3a;
-     }
 
-   
 
-    
-   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
