@@ -1,1 +1,2 @@
-# shop
+# shop 🛍️
+This is an app for a fictional second-hand shop where users can add and remove items to/from a shopping cart. A toggle reveals additional information about each product, such as brand, size, and composition. The 'Complete Purchase' button opens a modal that validates card information using regex. After users input all necessary details, a message confirms the completed purchase. The app employs modules to extract data from a mockup database and fundamental JavaScript concepts like manipulating objects and displaying them in the DOM. It boasts responsiveness across mobile devices, tablets, laptops, and widescreens. The design was crafted using Figma, while the images were developed by Midjourney.
